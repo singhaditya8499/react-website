@@ -1,23 +1,22 @@
-import logo from './logo.svg';
 import './App.css';
+import ReactRoundedImage from 'react-rounded-image';
+import ProfileImage from './Images/profile.jpg';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>My website</p>
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <ReactRoundedImage
+              image={ProfileImage}
+              imageWidth="200"
+              imageHeight="200"
+              hoverColor="#01494d"
+              roundedColor="#0d0f14"
+              roundedSize="8"
+        />
+        <h3 className="name">Aditya Singh</h3>
+        <h6 className="description">Technology Pantomath</h6>
+        <a className="keybase" href="https://keybase.io/singhaditya" target="_blank">9760 A7F9 636D 15F9</a>
       </header>
     </div>
   );
