@@ -1,0 +1,21 @@
+.nav {
+    list-style-type: none;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+.nav li {
+    display: inline-block;
+    font-size: 1.0rem;
+    padding: 5px;
+    text-decoration: none;
+    color: white;
+}
+a {
+    text-decoration: none;
+    color: white;
+}
+a:hover {
+    font-weight: bold;
+}
