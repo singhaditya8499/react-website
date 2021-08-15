@@ -1,11 +1,11 @@
-.nav {
+.frontPage-nav {
     list-style-type: none;
     text-align: center;
     margin: 0;
     padding: 0;
     color: white;
 }
-.nav li {
+.frontPage-nav li {
     display: inline-block;
     font-size: 1.0rem;
     padding: 5px;

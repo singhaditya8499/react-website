@@ -1,18 +1,18 @@
 import '../styles/Links.css'
-import { Route, Router, Switch, useHistory } from 'react-router-dom';
+import { Route, Router, Switch } from 'react-router-dom';
 import App from './App';
-import Resume from './Resume';
 import History from './History';
+import About from './About';
 export default function Routes() {
-    let history = useHistory();
-    const redirectBlog = () => {
-        history.push("https://www.google.com");
-    }
     return (
         <Router history={History}>
             <Switch>
                 <Route path="/" exact component={App}/>
-                <Route path="/resume" exact component={Resume} />
+                <Route path="/resume" exact component={() =>{
+                    window.location.href = "https://bit.ly/08adi04";
+                    return null;
+                }} />
+                <Route path="/about" exact component={About}/>
             </Switch>
         </Router>
     )
